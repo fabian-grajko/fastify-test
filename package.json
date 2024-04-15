@@ -1,0 +1,25 @@
+{
+  "name": "fastify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./dist/",
+    "build": "tsc",
+    "start:dev": "ts-node-dev --inspect --respawn --transpile-only ./src/index.ts",
+    "start": "node ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@fastify/swagger": "8.14.0",
+    "@fastify/swagger-ui": "2.1.0",
+    "fastify": "4.25.2",
+    "fastify-type-provider-zod": "1.1.9"
+  }
+}
